@@ -1,5 +1,4 @@
-# Five9Web2Campain
-APEX wrapper for Five9 Web2Campaign API.
+#APEX wrapper for Five9 Web2Campaign API.
 
 Example Usage:
 ```apex
