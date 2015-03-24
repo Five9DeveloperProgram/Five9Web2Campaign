@@ -24,4 +24,6 @@ F9Web2CampaignResult res = f9.doPost(f9lead);
 //check the result, look in the documentation
 //for possible error codes, errCode of 0 means success
 System.debug('errCode: ' + res.errCode + ', errDesc: '+res.errDesc);
+//example debug message:
+//USER_DEBUG [16]|DEBUG|errCode: 0, errDesc: "The request was successfully processed"
 ```
