@@ -23,5 +23,5 @@ F9Web2Campaign f9 = new F9Web2Campaign();
 F9Web2CampaignResult res = f9.doPost(f9lead);
 //check the result, look in the documentation
 //for possible error codes, errCode of 0 means success
-System.debug('Result from Web To Campaign API => errCode: ' + res.errCode + ', errDesc: '+res.errDesc);
+System.debug('errCode: ' + res.errCode + ', errDesc: '+res.errDesc);
 ```
