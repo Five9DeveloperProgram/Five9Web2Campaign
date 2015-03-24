@@ -8,12 +8,20 @@ See the Web2Campaign API guide for a list of all possible flags that can be set 
 
 ###Example Usage:
 ```apex
-F9Web2Campaign w2c = new F9Web2Campaign('five9domain');
-Map<string, string> f9lead = new Map<string, string>();
-f9lead.put('F9list','listname');
-f9lead.put('number1','8016665555');
-f9lead.put('F9TimeToCall','2015-02-12 14:30:00.000');
-f9lead.put('F9TimeFormat','yyyy-MM-dd HH:mm:ss.SSS');
-boolean res = w2c.go(f9lead);
-System.debug('go result: '+res);
+//createn a map of key => value pairs representing the 
+//parameters to send to the API
+Map<String, String> f9lead = new Map<String, String>();
+f9lead.put('F9domain', 'domainname');//required
+f9lead.put('F9list', 'listname');//requried
+f9lead.put('number1', '8015448854');//required
+f9lead.put('first_name', 'Bart');
+f9lead.put('last_name', 'Simpson');
+
+//Instantiate a new F9Web2Campaign object
+F9Web2Campaign f9 = new F9Web2Campaign();
+//call the doPost method with the lead
+F9Web2CampaignResult res = f9.doPost(f9lead);
+//check the result, look in the documentation
+//for possible error codes, errCode of 0 means success
+System.debug('Result from Web To Campaign API => errCode: ' + res.errCode + ', errDesc: '+res.errDesc);
 ```
