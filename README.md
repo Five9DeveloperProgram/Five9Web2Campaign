@@ -32,4 +32,4 @@ System.debug('errCode: ' + res.errCode + ', errDesc: '+res.errDesc);
 
 ```
 ###Demonstration Video:
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/z1ZE-w03oNY/0.jpg)](http://www.youtube.com/watch?v=z1ZE-w03oNY)
+[![Demo Video](http://i.imgur.com/oEKdTwC.png "Watch on YouTube")](http://www.youtube.com/watch?v=z1ZE-w03oNY)
